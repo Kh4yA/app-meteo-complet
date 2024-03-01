@@ -1,0 +1,37 @@
+.container-1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-100{
+    width: 100%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-center {
+  align-items: center;
+}
+.margin-auto{
+    margin: auto;
+}
+.space-arround{
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+.bold{
+font-weight: 700;
+}
+.box {
+  border: 1px solid rgba(0, 0, 0, 0.282);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.275);
+  -webkit-box-shadow : encart 34px 24px 28px -10px rgba(205, 186, 157, 0.874) ;
+  -moz-box-shadow : encart 34px 24px 28px -10px rgba(205, 186, 157, 0.25) ;
+  box-shadow : encart 34px 24px 28px -10px rgba(205, 186, 157, 0.386);
+}

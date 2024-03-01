@@ -1,0 +1,16 @@
+{
+  "name": "app.meteo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch assets/main.scss public/css/style.css",
+    "sass-prod": "sass --style=compressed assets/main.scss public/css/style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minireset.css": "^0.0.7",
+    "sass": "^1.71.1"
+  }
+}

@@ -1,0 +1,41 @@
+.content{
+    padding: 2.5% 0;
+}
+.container { 
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "date-time date-time date-time date-time current current current current rectangle-empty rectangle-empty rectangle-empty rectangle-empty"
+      "date-time date-time date-time date-time current current current current boussole boussole boussole boussole"
+      "date-time date-time date-time date-time current current current current boussole boussole boussole boussole"
+      "square-empty square-empty day-night day-night current current current current boussole boussole boussole boussole"
+      "square-empty square-empty day-night day-night current current current current boussole boussole boussole boussole"
+      "hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather"
+      "hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather"
+      "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week"
+      "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week"
+      "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week";
+  }
+  
+  .date-time { grid-area: date-time; }
+  
+  .current { grid-area: current; }
+  
+  .day-night { grid-area: day-night; }
+  
+  .square-empty { grid-area: square-empty; }
+  
+  .rectangle-empty { grid-area: rectangle-empty; }
+  
+  .boussole { grid-area: boussole; }
+  
+  .hours-weather { grid-area: hours-weather; }
+  
+  .weather-week { grid-area: weather-week; }
+  

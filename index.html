@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="zone">
+      <!-- background image -->
+      <div class="background"></div>
+      <!-- contenu grid -->
+      <div class="content">
+        <div class="container">
+          <!-- box date et heure -->
+          <div class="date-time box flex item-center">
+            <h2 class="width-100 text-center bold" id="date">date</h2>
+            <h3 class="width-100 text-center bold" id="hours">heure</h3>
+          </div>
+          <!-- meteo du jour -->
+          <div class="current box flex item-center space-arround">
+            <h3 class="width-100 text-center bold current-temp"></h3>
+            <span class=" picto-weather- current-picto"></span>
+            <h2 class="width-100 text-center bold" id="currentTemp">26°C</h2>
+          </div>
+          <!-- box jour ou nuit -->
+          <div class="day-night box flex item-center space-arround">
+            <!-- <span class="picto-daynight picto-daynight-sun"></span> -->
+          </div>
+          <!-- carre vide -->
+          <div class="square-empty box bg-blue"></div>
+          <!-- rectangle vide -->
+          <div class="rectangle-empty box flex item-center space-arround bold">
+            <p></p>
+          </div>
+          <!-- boussole -->
+          <div class="boussole box">
+            <div class="compass">
+              <img
+                src="/public/img/compass-arrow.png"
+                class="arrow" id="arrow"
+                alt="fleche de compas"
+              />
+            </div>
+            <p class="bold text-center width-100" id="windSpeed">25 km / heure</p>
+          </div>
+          <!-- meteo heure par heure -->
+          <div class="hours-weather box width-100 item-center">
+            <!-- <div class="slide item-center">
+              <div class="slide-content box flex item-center">
+                <p class="width-100 text-center bold"><img src="/public/img/thermometer.png" alt="">10°</p>
+                <p class="width-100 bold text-center"><img src="/public/img/umbrella.png">  0mm</p>
+                <p class="width-100 text-center bold">00h00</p>
+              </div> 
+            </div> -->
+          </div> 
+          <!-- meteo 7 jours -->
+          <div class="weather-week box flex">
+            <!-- <div class="slide-content box flex item-center">
+              <p class="width-100 text-center bold" id="TempWeek">10°</p>
+              <span class="mini-picto-weather margin-auto" id="weather-week-picto"></span>
+              <p class="width-100 text-center bold">0mm</p>
+              <p class="width-100 text-center bold">00h00</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./public/js/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    color: $color-black;
+}
+h3{
+    font-size: 2rem
+}
+h2{
+    font-size: 3rem;
+}
+.bg-blue{
+background-color: #2783A0;
+}
+//card carrousel
+.hours-weather{
+display: flex;
+flex-wrap: nowrap;
+overflow-x: scroll;
+scroll-snap-type: mandatory;
+}
+.slide{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 10px;
+}
+.slide-content{
+    width: 15vw;
+    height: 100%;
+    background-color: #cdba9d39;
+}
+.weather-week{
+padding: 10px;
+overflow: scroll;
+flex-wrap: nowrap;
+gap: 10px;
+}

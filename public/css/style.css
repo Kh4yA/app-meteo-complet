@@ -1,0 +1,388 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.font-min {
+  font-size: 16px;
+}
+
+.color-text {
+  color: #2800c7;
+}
+
+.picto-weather {
+  width: 197px;
+  height: 196px;
+  display: inline-block;
+  background-image: url(/public/img/pictos-weather-196.png);
+  background-repeat: no-repeat;
+}
+
+.picto-weather-storm {
+  background-position: 0 0;
+}
+
+.picto-weather-rain {
+  background-position: 0 -196px;
+}
+
+.picto-weather-sunny {
+  background-position: 0 -392px;
+}
+
+.picto-weather-cloud {
+  background-position: 0 -588px;
+}
+
+.picto-weather-wind {
+  background-position: 0 -784px;
+}
+
+.picto-weather-sun {
+  background-position: 0 -980px;
+}
+
+.picto-weather-snow {
+  background-position: 0 -1176px;
+}
+
+.picto-daynight {
+  width: 96px;
+  height: 96px;
+  margin: 20px;
+  display: inline-block;
+  background-image: url(/public/img/daynight-pictos.png);
+  background-repeat: no-repeat;
+}
+
+.picto-daynight-moon {
+  background-position: -120px 0;
+}
+
+.picto-daynight-sun {
+  background-position: 0 0;
+}
+
+.compass {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  background-image: url(/public/img/compass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compass > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mini-picto-weather {
+  background-image: url(/public/img/minipictos.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+}
+
+.mini-picto-weather-suncloud {
+  background-position: 0 0;
+}
+
+.mini-picto-weather-sun {
+  background-position: -116px 0;
+}
+
+.mini-picto-weather-rain {
+  background-position: -232px 0;
+}
+
+.mini-picto-weather-sunny {
+  background-position: -348px 0;
+}
+
+.mini-picto-weather-storm {
+  background-position: -464px 0;
+}
+
+.mini-picto-weather-snow {
+  background-position: -580px 0;
+}
+
+.container-1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.space-arround {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.box {
+  border: 1px solid rgba(0, 0, 0, 0.282);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.275);
+  -webkit-box-shadow: encart 34px 24px 28px -10px rgba(205, 186, 157, 0.874);
+  -moz-box-shadow: encart 34px 24px 28px -10px rgba(205, 186, 157, 0.25);
+  box-shadow: encart 34px 24px 28px -10px rgba(205, 186, 157, 0.386);
+}
+
+body {
+  color: #343553;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.bg-blue {
+  background-color: #2783A0;
+}
+
+.hours-weather {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-snap-type: mandatory;
+}
+
+.slide {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  padding: 10px;
+}
+
+.slide-content {
+  width: 15vw;
+  height: 100%;
+  background-color: rgba(205, 186, 157, 0.2235294118);
+}
+
+.weather-week {
+  padding: 10px;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.background > img {
+  position: fixed;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  padding: 2.5% 0;
+}
+
+.container {
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "date-time date-time date-time date-time current current current current rectangle-empty rectangle-empty rectangle-empty rectangle-empty" "date-time date-time date-time date-time current current current current boussole boussole boussole boussole" "date-time date-time date-time date-time current current current current boussole boussole boussole boussole" "square-empty square-empty day-night day-night current current current current boussole boussole boussole boussole" "square-empty square-empty day-night day-night current current current current boussole boussole boussole boussole" "hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather" "hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather hours-weather" "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week" "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week" "weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week weather-week";
+}
+
+.date-time {
+  grid-area: date-time;
+}
+
+.current {
+  grid-area: current;
+}
+
+.day-night {
+  grid-area: day-night;
+}
+
+.square-empty {
+  grid-area: square-empty;
+}
+
+.rectangle-empty {
+  grid-area: rectangle-empty;
+}
+
+.boussole {
+  grid-area: boussole;
+}
+
+.hours-weather {
+  grid-area: hours-weather;
+}
+
+.weather-week {
+  grid-area: weather-week;
+}
+
+@media all and (max-width: 579px) {
+  .container {
+    display: grid;
+    width: 99%;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "date-time date-time rectangle-empty rectangle-empty" "current current current current" "current current current current" "current current current current" "current current current current" "current current current current" "current current current current" "day-night day-night boussole boussole" "day-night day-night boussole boussole" "day-night day-night boussole boussole" "day-night day-night boussole boussole" "hours-weather hours-weather hours-weather hours-weather" "hours-weather hours-weather hours-weather hours-weather" "hours-weather hours-weather hours-weather hours-weather" "weather-week weather-week weather-week weather-week" "weather-week weather-week weather-week weather-week" "weather-week weather-week weather-week weather-week" "weather-week weather-week weather-week weather-week";
+  }
+  .current {
+    grid-area: current;
+  }
+  .hours-weather {
+    grid-area: hours-weather;
+  }
+  .weather-week {
+    grid-area: weather-week;
+  }
+  .day-night {
+    grid-area: day-night;
+  }
+  .boussole {
+    grid-area: boussole;
+    width: 100%;
+  }
+  .date-time {
+    grid-area: date-time;
+  }
+  .rectangle-empty {
+    grid-area: rectangle-empty;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .weather-week {
+    height: 100%;
+  }
+  .square-empty {
+    display: none;
+  }
+  .slide-content {
+    width: 30vw;
+    height: 100%;
+    background-color: rgba(205, 186, 157, 0.2235294118);
+  }
+  .slide {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 5px;
+  }
+  .weather-week {
+    padding: 5px;
+    gap: 5px;
+  }
+  .compass {
+    width: 100%;
+    height: 85%;
+    position: relative;
+    background-image: url(/public/img/compass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .compass > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

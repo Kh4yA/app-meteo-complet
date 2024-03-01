@@ -1,0 +1,85 @@
+//picto temps du jour
+.picto-weather {
+  width: 197px;
+  height: 196px;
+  display: inline-block;
+  background-image: url(/public/img/pictos-weather-196.png);
+  background-repeat: no-repeat;
+}
+.picto-weather-storm {
+  background-position: 0 0;
+}
+.picto-weather-rain {
+  background-position: 0 -196px;
+}
+.picto-weather-sunny {
+  background-position: 0 -392px;
+}
+.picto-weather-cloud {
+  background-position: 0 -588px;
+}
+.picto-weather-wind {
+  background-position: 0 -784px;
+}
+.picto-weather-sun {
+  background-position: 0 -980px;
+}
+.picto-weather-snow {
+  background-position: 0 -1176px;
+}
+//picto lune et soleil
+.picto-daynight {
+  width: 96px;
+  height: 96px;
+  margin: 20px;
+  display: inline-block;
+  background-image: url(/public/img/daynight-pictos.png);
+  background-repeat: no-repeat;
+}
+.picto-daynight-moon {
+  background-position: -120px 0;
+}
+.picto-daynight-sun {
+  background-position: 0 0;
+}
+//picto boussole
+.compass {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  background-image: url(/public/img/compass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.compass > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//mini picto 7 jours
+.mini-picto-weather {
+  background-image: url(/public/img/minipictos.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+}
+.mini-picto-weather-suncloud {
+  background-position: 0 0;
+}
+.mini-picto-weather-sun {
+  background-position: -116px 0;
+}
+.mini-picto-weather-rain {
+  background-position: -232px 0;
+}
+.mini-picto-weather-sunny {
+  background-position: -348px 0;
+}
+.mini-picto-weather-storm {
+  background-position: -464px 0;
+}
+.mini-picto-weather-snow {
+  background-position: -580px 0;
+}
