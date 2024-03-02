@@ -191,5 +191,6 @@ function dayNigthMoove(donnee) {
     dayNigth.innerHTML = `<span class="picto-daynight picto-daynight-sun"></span>`
   }else{
     dayNigth.innerHTML = `<span class="picto-daynight picto-daynight-moon"></span>`
+    background.innerHTML = `<img src="./public/img/night.jpg" alt=""></img>`
   }
 }
