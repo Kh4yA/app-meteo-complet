@@ -161,8 +161,8 @@ function carrouselHours(donnees) {
     let temperature = donnees.temperature_2m[i];
     hoursWeather.innerHTML += `<div class="slide item-center">
         <div class="slide-content box flex item-center">
-          <p class="width-100 text-center bold"><img src="/public/img/thermometer.png" alt="">${temperature}</p>
-          <p class="width-100 bold text-center"><img src="/public/img/umbrella.png">  ${rain}</p>
+          <p class="width-100 text-center bold"><img src="public/img/thermometer.png" alt="">${temperature}</p>
+          <p class="width-100 bold text-center"><img src="public/img/umbrella.png">  ${rain}</p>
           <p class="width-100 text-center color-text font-min bold">${hours}h00</p>
         </div>`;
   }
