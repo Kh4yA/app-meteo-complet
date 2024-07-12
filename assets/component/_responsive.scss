@@ -5,16 +5,16 @@
     background-position-y: bottom;
     background-size: contain;
   }
-
   .container {
     display: grid;
-    width: 99%;
+    margin: auto;
+    width: 95%;
     height: 150vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    gap: 3px 3px;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "date-time date-time rectangle-empty rectangle-empty"
